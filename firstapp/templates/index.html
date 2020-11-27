@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Add two numbers in Django</h1>
+    <form class="" action={%url 'basicapp:add'%} method="POST">
+      <label for="a">Enter First Number:</label>
+      &nbsp &nbsp
+      <input id="a" type="text" name="a" value=""><br><br>
+      <label for="b">Enter Second Number:</label>
+      <input id="b" type="text" name="b" value=""><br><br>
+      {% csrf_token %}
+      <input type="submit" name="" value="submit">
+    </form>
+
+  </body>
+</html>
